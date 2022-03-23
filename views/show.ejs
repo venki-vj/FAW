@@ -1,0 +1,19 @@
+<% layout('./layouts/boilerplate') %>
+<% let len="https://in.indeed.com/"; %> 
+
+<div class="d-flex container justify-content-center mb-3   mt-4">
+    <div class=" card sm-col-8 col-lg-8 shadow  ">
+        <div class="card-body m-3 ">
+            <div class="card-title mt-3 sm-fs-6">
+                <h4><%-jobs.job_title%> </h4>
+            </div>
+            <div class="card-subtitle sm-fs-6">
+                <h6>Company : <%- jobs.company_name.slice(len.length) %> </h5>
+                <p><%- jobs.pay ? `Salary : ${jobs.pay}`: ''  %> </p>
+            </div>
+            <div class="card-text ">
+                <p class="text-justify"><%-jobs.job_description_html  %> </p>
+            </div>
+        </div>
+    </div>
+</div>

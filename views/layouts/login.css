@@ -1,0 +1,49 @@
+.container {
+    margin-top:50px ;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:20%;
+}
+.card {
+    border: none;
+    width: 400px;
+    align-items:center;
+    border-radius: 50px;
+}
+form{
+    width: 100%;
+    padding: 20px;
+}
+input{
+    border:1px solid black;
+}
+.login{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,20,185,1) 0%, rgba(0,212,255,1) 100%);
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-top: 10px;
+    margin-left:0px;
+}
+.or{
+    display: flex;
+    margin-top: 20px;
+}
+hr{
+    width:120px;
+    align-items: center;
+    justify-content:center;
+    margin-top: 12px;
+}
+.textOfOr{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.google{
+    width: 30px;
+    padding-right:5px;
+    color: #fff;
+    
+}

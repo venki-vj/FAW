@@ -1,0 +1,34 @@
+<% layout('./layouts/boilerplate') %> 
+<link rel="stylesheet" href="./layouts/login.css"> 
+
+
+<div class="container mt-3  col-3">
+    <div class="card rounded-3  shadow-lg p-4 mb-5 bg-body rounded">
+        <h3 class="display-6 d-flex align-center justify-content-center ">
+                Find A Work
+        </h3>
+        
+        <form  method="post" >
+            <p><strong>Don't Have an account?</strong>
+                <a href="/register">Sign up</a></p>
+            <div class="mb-3">
+                <label for="email" class="form-label fw-bold">Email address</label>
+                <input type="email" name="userEmail" class="form-control" id="email" placeholder="name@example.com"/>
+              </div>  
+              <div class="mb-3">
+                <label for="password" class="form-label fw-bold">Password</label>
+                
+                <input type="password" name="userPassword" class="form-control" id="password" placeholder="Enter Your Password"/>
+              </div> 
+              <button type="submit" class="btn btn-success ml-0 col-12 login">Login</button>
+    
+        </form>      
+        <div class="or">
+            <p class="textOfOr mt-3 d-flex justify-content-center align-center">OR</p>
+        </div>
+        <form action="">
+            <button type="submit" class="btn col-12 btn-primary fw-bold"> Continue with Google</button> 
+            <button type="submit" class="btn col-12 btn-dark fw-bold mt-3"> Continue with Github</button>
+        </form>
+</div>
+</div>

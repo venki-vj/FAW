@@ -1,0 +1,37 @@
+<%- layout('./layouts/boilerplate')  %> 
+<div class="container col-3 mt-3 ">
+    <div class="card rounded-3 shadow-lg p-4 mb-3 bg-body rounded">
+        <h3 class="display-6">Find Your Job</h3>
+        
+        <form  method="post" >
+          
+            <div class="mb-2">
+                <label for="email" class="form-label fw-bold">Email address</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>  
+              <div class="mb-2">
+                <label for="Username" class="form-label fw-bold">FirstName</label>
+                <input type="text" class="form-control" name="firstname" id="text" placeholder="Enter Your First Name">
+              </div> 
+              <div class="mb-2">
+                <label for="password" class="form-label fw-bold">LastName</label> 
+                <input type="text" name="lastname" class="form-control" id="password" placeholder="Enter Your Lastname">
+              </div> 
+              <div class="mb-2">
+                <label for="Confirmpassword" class="form-label fw-bold">Password</label>
+                <input type="password" name="password" class="form-control" id="Confirmpassword" placeholder="Enter Your Password">
+              </div> 
+              <button type="submit" class="btn btn-danger col-12 register">Register</button>
+    
+        </form>      
+        <div class="or">
+           
+            <p class="textOfOr mt-3 d-flex justify-content-center align-center">OR</p>
+      
+        </div>
+        <form action="">
+            <button type="submit" class="btn col-12 btn-primary fw-bold"><img src="./images/logo-google.svg" alt="" class="google"> Continue with Google</button> 
+            <button type="submit" class="btn col-12 btn-dark fw-bold mt-1"><img src="./images/github_32px.png" alt=""  srcset=""> Continue with Github</button>
+        </form>
+</div>
+</div>

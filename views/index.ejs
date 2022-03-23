@@ -1,0 +1,27 @@
+<% layout('./layouts/boilerplate') %> 
+<% let length="https://in.indeed.com/"; %> 
+
+
+<% for(let lists of list){   %> 
+   <div class="container justify-content-start mt-3  ">
+       <div class="card mb-3 col-lg-6 rounded-3 shadow">
+        <div class="card-body">
+            <div class="card-title"><h5> <%-lists.job_title  %> </h5>
+                <h6>Company Name: <strong><%-lists.company_name.slice(length.length)  %></strong> </h6> 
+            </div>
+            <div class="card-subtitle"> <h6 class="text-muted mb-3"><%- lists.pay  %> </h6></div>
+            <p>
+                <!-- <span class="d-inline-block text-truncate text-wrap" style=" text-overflow: ellipsis; overflow:hiden;   max-height:50px">
+                    <%- lists.job_description_html.slice(10) %>  %> 
+                  </span> -->
+            </p>
+            <a href="/<%-lists._id  %>"  class="card-link">click here</a>
+
+
+    
+        </div>
+
+    </div>
+   </div>
+<% } %> 
+
